@@ -7,7 +7,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import com.example.projekt7.Model.RegularUser
+import com.example.projekt7.model.RegularUser
 import com.example.projekt7.R
 import com.example.projekt7.util.DataManager
 

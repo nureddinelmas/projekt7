@@ -5,7 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.recyclerview.widget.RecyclerView
-import com.example.projekt7.Model.Place
+import com.example.projekt7.model.Place
 import com.example.projekt7.R
 
 data class ProfileAdapter(var spotMaps: ArrayList<Place>, val onClickListener: OnClickListener) : RecyclerView.Adapter<ProfileAdapter.ViewHolder>() {

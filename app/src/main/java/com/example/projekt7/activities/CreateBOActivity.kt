@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import com.example.projekt7.Model.BusinessOwner
+import com.example.projekt7.model.BusinessOwner
 import com.example.projekt7.R
 import com.example.projekt7.util.DataManager
 

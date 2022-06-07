@@ -4,7 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.TextView
-import com.example.projekt7.Model.Place
+import com.example.projekt7.model.Place
 import com.example.projekt7.R
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.model.Marker

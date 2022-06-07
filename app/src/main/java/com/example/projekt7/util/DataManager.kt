@@ -1,8 +1,8 @@
 package com.example.projekt7.util
 
 import android.util.Log
-import com.example.projekt7.Model.BusinessOwner
-import com.example.projekt7.Model.RegularUser
+import com.example.projekt7.model.BusinessOwner
+import com.example.projekt7.model.RegularUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase

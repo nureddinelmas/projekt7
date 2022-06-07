@@ -8,7 +8,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.projekt7.Model.Place
+import com.example.projekt7.model.Place
 import com.example.projekt7.R
 import com.example.projekt7.adapter.ProfileAdapter
 import com.google.android.material.floatingactionbutton.FloatingActionButton

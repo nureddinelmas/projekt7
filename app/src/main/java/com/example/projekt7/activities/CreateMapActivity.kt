@@ -10,7 +10,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat
-import com.example.projekt7.Model.Place
+import com.example.projekt7.model.Place
 import com.example.projekt7.R
 import com.example.projekt7.adapter.ShowMapsAdapter
 import com.google.android.gms.maps.CameraUpdateFactory

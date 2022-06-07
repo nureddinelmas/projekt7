@@ -8,7 +8,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.EditText
 import android.widget.Toast
-import com.example.projekt7.Model.Place
+import com.example.projekt7.model.Place
 import com.example.projekt7.R
 import com.example.projekt7.databinding.ActivityUploadImageBinding
 import com.example.projekt7.util.DataManager
