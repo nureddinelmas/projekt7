@@ -9,3 +9,5 @@ class BOProfileActivity : AppCompatActivity() {
         setContentView(R.layout.activity_boprofile)
     }
 }
+
+// This is my first task in this project.
