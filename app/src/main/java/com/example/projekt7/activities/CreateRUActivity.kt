@@ -1,4 +1,4 @@
-package com.example.projekt7
+package com.example.projekt7.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,9 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.projekt7.Model.RegularUser
+import com.example.projekt7.R
+import com.example.projekt7.util.DataManager
 
 class CreateRUActivity : AppCompatActivity() {
     lateinit var nameEditText: EditText

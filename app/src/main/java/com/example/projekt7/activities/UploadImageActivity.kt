@@ -1,16 +1,17 @@
-package com.example.projekt7
+package com.example.projekt7.activities
 
 import android.app.ProgressDialog
 import android.content.Intent
 import android.net.Uri
-import android.nfc.Tag
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.EditText
 import android.widget.Toast
 import com.example.projekt7.Model.Place
+import com.example.projekt7.R
 import com.example.projekt7.databinding.ActivityUploadImageBinding
+import com.example.projekt7.util.DataManager
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.Marker

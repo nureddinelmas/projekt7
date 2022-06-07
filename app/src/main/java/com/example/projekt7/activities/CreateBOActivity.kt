@@ -1,12 +1,14 @@
-package com.example.projekt7
+package com.example.projekt7.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.projekt7.Model.BusinessOwner
+import com.example.projekt7.R
+import com.example.projekt7.util.DataManager
 
 class CreateBOActivity : AppCompatActivity() {
     lateinit var nameEditText: EditText
@@ -17,7 +19,6 @@ class CreateBOActivity : AppCompatActivity() {
     lateinit var mailEditText: EditText
     lateinit var keyEditText: EditText
     lateinit var passwordEditText: EditText
-    val TAG = "!!!"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,14 +55,6 @@ class CreateBOActivity : AppCompatActivity() {
             //Nedan är lite check i LogCat på att alla uppgifter sparats
             var printNewUser =
                 DataManager.businessOwnerList[DataManager.businessOwnerList.lastIndex]
-            Log.d(TAG, "${DataManager.businessOwnerList.lastIndex}")
-            Log.d(TAG, "New user name: ${printNewUser.name}")
-            Log.d(TAG, "New user business: ${printNewUser.business}")
-            Log.d(TAG, "New user street: ${printNewUser.adressStreet}")
-            Log.d(TAG, "New user zipcode: ${printNewUser.townZipCode}")
-            Log.d(TAG, "New user phone: ${printNewUser.phone}")
-            Log.d(TAG, "New user mail: ${printNewUser.mail}")
-            Log.d(TAG, "New user password: ${printNewUser.password}")
 
 
             DataManager.createBO(mailString,passwordString)
