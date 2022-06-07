@@ -10,8 +10,8 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
 import com.example.projekt7.R
+import com.example.projekt7.util.Constants
 
-private const val PICK_PHOTO_CODE = 1234
 
 class SaveSpotActivity : AppCompatActivity() {
     private lateinit var imageSelected : ImageView
@@ -30,7 +30,8 @@ class SaveSpotActivity : AppCompatActivity() {
             val imagePickerIntent = Intent(Intent.ACTION_GET_CONTENT)
             imagePickerIntent.type = "image/*"
             if (imagePickerIntent.resolveActivity(packageManager) != null){
-                startActivityForResult(imagePickerIntent, PICK_PHOTO_CODE)
+                // Used Constant here also
+                startActivityForResult(imagePickerIntent, Constants.PICK_PHOTO_CODE)
             }
         }
 
@@ -38,7 +39,7 @@ class SaveSpotActivity : AppCompatActivity() {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == PICK_PHOTO_CODE) {
+        if (requestCode == Constants.PICK_PHOTO_CODE) {
             if (resultCode == Activity.RESULT_OK) {
                 photoUri = data?.data
                 Log.i("Select","photoUri $photoUri")
