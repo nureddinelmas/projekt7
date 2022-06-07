@@ -37,18 +37,21 @@ class CreateBOActivity : AppCompatActivity() {
             passwordEditText = findViewById(R.id.editTextPassword)
             keyEditText = findViewById(R.id.editTextIdentityKey)
 
-            var nameString = nameEditText.getText().toString()
-            var streetString = streetEditText.getText().toString()
-            var businessString = businessEditText.getText().toString()
-            var passwordString = passwordEditText.getText().toString()
-            var zipString = zipEditText.getText().toString()
-            var phoneString = phoneEditText.getText().toString()
-            var mailString = mailEditText.getText().toString()
+
+
+
+            var nameOfOwner = nameEditText.getText().toString()
+            var streetOfOwner = streetEditText.getText().toString()
+            var businessOfOwner = businessEditText.getText().toString()
+            var passwordOfOwner = passwordEditText.getText().toString()
+            var zipOfOwner = zipEditText.getText().toString()
+            var phoneOfOwner = phoneEditText.getText().toString()
+            var mailOfOwner = mailEditText.getText().toString()
 
 
             val newBusinessOwner = BusinessOwner(
-                nameString, businessString, streetString, zipString, phoneString, mailString,
-                passwordString
+                nameOfOwner, businessOfOwner, streetOfOwner, zipOfOwner, phoneOfOwner, mailOfOwner,
+                passwordOfOwner
             )
             DataManager.businessOwnerList.add(newBusinessOwner)
 
@@ -57,7 +60,7 @@ class CreateBOActivity : AppCompatActivity() {
                 DataManager.businessOwnerList[DataManager.businessOwnerList.lastIndex]
 
 
-            DataManager.createBO(mailString,passwordString)
+            DataManager.createBO(mailOfOwner,passwordOfOwner)
             val intent = Intent(this, LoginScreenActivity::class.java)
             startActivity(intent)
             Toast.makeText(applicationContext,"Account created !", Toast.LENGTH_SHORT).show()

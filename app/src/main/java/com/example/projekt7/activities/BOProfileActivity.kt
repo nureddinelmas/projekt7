@@ -12,3 +12,4 @@ class BOProfileActivity : AppCompatActivity() {
 }
 
 // This activity will be removed because of not using
+

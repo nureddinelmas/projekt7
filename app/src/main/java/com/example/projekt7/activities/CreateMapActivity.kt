@@ -20,6 +20,7 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.example.projekt7.databinding.ActivityCreateMapBinding
+import com.example.projekt7.util.Constants
 import com.example.projekt7.util.DataManager
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.firestore.*
@@ -98,7 +99,8 @@ class CreateMapActivity : AppCompatActivity(), OnMapReadyCallback {
     private fun spotsListener() {
         val db = FirebaseFirestore.getInstance()
 
-        db.collection("places")
+        // We can create new constant in the other object "PLACE_COLLECTION"
+        db.collection(Constants.PLACE_COLLECTION)
             .addSnapshotListener(object : EventListener<QuerySnapshot> {
                 override fun onEvent(value: QuerySnapshot?, error: FirebaseFirestoreException?) {
 
