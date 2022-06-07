@@ -1,10 +1,10 @@
 
-package com.example.projekt7
+package com.example.projekt7.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import com.example.projekt7.Model.Place
+import com.example.projekt7.R
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment

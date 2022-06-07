@@ -1,7 +1,8 @@
-package com.example.projekt7
+package com.example.projekt7.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.projekt7.R
 
 class BOProfileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -10,4 +11,4 @@ class BOProfileActivity : AppCompatActivity() {
     }
 }
 
-// This is my first task in this project.
+// This activity will be removed because of not using
