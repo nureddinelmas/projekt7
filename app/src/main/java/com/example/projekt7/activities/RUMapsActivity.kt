@@ -20,6 +20,7 @@ import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import java.util.*
 
+// Functions name must be understandable
 class RUMapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private lateinit var mMap: GoogleMap
@@ -97,6 +98,7 @@ class RUMapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     }
 
+    // The function's name must be understandable
     private fun setPoiClick(map:GoogleMap) {
         map.setOnPoiClickListener {
             val poiMarker = map.addMarker(
@@ -122,6 +124,16 @@ class RUMapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private fun enableMyLocation() {
         if (isPermissionGranted()) {
+            if (ActivityCompat.checkSelfPermission(
+                    this,
+                    Manifest.permission.ACCESS_FINE_LOCATION
+                ) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(
+                    this,
+                    Manifest.permission.ACCESS_COARSE_LOCATION
+                ) != PackageManager.PERMISSION_GRANTED
+            ) {
+                return
+            }
             mMap.isMyLocationEnabled = true
         }
         else {
@@ -137,7 +149,8 @@ class RUMapsActivity : AppCompatActivity(), OnMapReadyCallback {
             requestCode: Int,
             permissions: Array<out String>,
             grantResults: IntArray) {
-            if (requestCode == REQUEST_LOCATION_PERMISSION) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (requestCode == REQUEST_LOCATION_PERMISSION) {
                 if (grantResults.contains(PackageManager.PERMISSION_GRANTED))
                     enableMyLocation()
             }

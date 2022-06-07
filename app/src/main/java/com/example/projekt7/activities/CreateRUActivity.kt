@@ -50,7 +50,7 @@ class CreateRUActivity : AppCompatActivity() {
             Log.d(TAG,"New user password: ${printNewUser.password}")
 
 
-            DataManager.createRU(mailString,passwordString)
+            DataManager.createNewUser(mailString,passwordString)
 
             if(mailString.isEmpty() || passwordString.isEmpty()){
             Toast.makeText(applicationContext,"Please fill all the information to create an account", Toast.LENGTH_SHORT).show()

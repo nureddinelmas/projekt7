@@ -15,8 +15,10 @@ object DataManager {
     var regularUserList = mutableListOf<RegularUser>()
     var businessOwnerList = mutableListOf<BusinessOwner>()
 
-    fun createRU(mailString:String, passwordString:String){
+    // There would be many comments that describe these functions.
 
+    fun createNewUser(mailString:String, passwordString:String){
+    // Functions name must be clear.
         if (mailString.isEmpty() || passwordString.isEmpty()) {
             return
         }
