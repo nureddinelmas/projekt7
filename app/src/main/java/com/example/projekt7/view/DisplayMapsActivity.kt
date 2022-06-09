@@ -1,5 +1,5 @@
 
-package com.example.projekt7.activities
+package com.example.projekt7.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

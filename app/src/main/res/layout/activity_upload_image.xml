@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingHorizontal="16dp"
-    tools:context=".activities.UploadImageActivity">
+    tools:context=".view.UploadImageActivity">
 
     <EditText
         android:id="@+id/textTitle"

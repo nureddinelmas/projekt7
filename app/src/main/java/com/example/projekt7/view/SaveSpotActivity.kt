@@ -1,4 +1,4 @@
-package com.example.projekt7.activities
+package com.example.projekt7.view
 
 import android.app.Activity
 import android.content.Intent

@@ -1,4 +1,4 @@
-package com.example.projekt7.activities
+package com.example.projekt7.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
