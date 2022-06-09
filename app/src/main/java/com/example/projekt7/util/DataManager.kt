@@ -56,9 +56,7 @@ object DataManager {
     }
 
     fun addBusinessData(businessOwner: BusinessOwner){
-        val user = auth.currentUser
-        if (user == null)
-            return
+        val user = auth.currentUser ?: return
 
         db.collection("users").document(user.uid)
             .collection("data").add(businessOwner)
@@ -68,9 +66,7 @@ object DataManager {
 
     }
     fun addRegularData(regularUser: RegularUser){
-        val user = auth.currentUser
-        if (user == null)
-            return
+        val user = auth.currentUser ?: return
 
         db.collection("users").document(user.uid)
             .collection("data").add(regularUser)
